@@ -1,0 +1,40 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+---
+
+<Layout title="spotify header clone">
+  <main>
+    <div class="bg-spotify h-full w-full absolute z-0"></div>
+    <div
+      id="container"
+      class={`bg-[#f89048] flex justify-start align-bottom items-end min-h-[25vh] w-[100vw] z-10 p-4`}
+    >
+      <img
+        src="https://i.scdn.co/image/ab67616d0000b27349d694203245f241a1bcaa72"
+        alt="placeholder"
+        class="max-h-[200px] shadow-spotify mr-7 z-10"
+      />
+      <div id="details" class="text-[#fff] z-10">
+        <h2 class="">ALBUM</h2>
+        <h1 class="text-9xl font-bold">Un Verano Sin Ti</h1>
+        <div class="flex items-center gap-1">
+          <img
+            id="avatar"
+            src="https://i.scdn.co/image/ab67616d0000b27349d694203245f241a1bcaa72"
+            alt="placeholder"
+            class="max-h-[40px] rounded-[50%]"
+          />
+          <a href="https://open.spotify.com/artist/4q3ewBCX7sLwd24euuV69X">
+            <h3>Bad Bunny</h3>
+          </a>
+          <span>•</span>
+          <h3>2022</h3>
+          <span>•</span>
+          <h3>23 songs,</h3>
+          <h4 class="text-slate-50 font-thin">1 hr 21 min</h4>
+        </div>
+      </div>
+    </div>
+  </main>
+</Layout>
